@@ -1,5 +1,6 @@
 def selects_all_female_bears_return_name_and_age 
-  "SELECT bears.name, bears.age FROM bears WHERE gender='F';"
+ #"SELECT bears.name, bears.age FROM bears WHERE gender='F';"
+ "SELECT name, age FROM bears WHERE gender = 'F';"
 end
 
 def selects_all_bears_names_and_orders_in_alphabetical_order 
@@ -16,6 +17,7 @@ end
 
 def select_youngest_bear_and_returns_name_and_age 
   "SELECT bears.name, bears.age FROM bears ORDER BY bears.age ASC LIMIT 1;"
+  #SELECT name, MAX(age) FROM bears;
 end
 
 def selects_most_prominent_color_and_returns_with_count
